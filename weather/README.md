@@ -17,13 +17,6 @@ A modern, responsive weather web application that displays **today's weather** f
 
 ---
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/RajJoshi/weather-app.git
-
 ## Usage
 
 1. Open `index.html` in a browser.  
