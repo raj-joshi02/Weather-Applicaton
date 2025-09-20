@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg glass-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">🌤️ Weather App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search -->
+  <div class="container my-4 text-center">
+    <input type="text" id="cityInput" class="form-control w-50 d-inline" placeholder="Enter city, e.g., Ujjain,India">
+    <button id="searchBtn" class="btn btn-primary">Get Weather</button>
+  </div>
+
+  <!-- Weather Cards -->
+  <div class="container my-4">
+    <h1 class="text-center mb-5">Today's Weather</h1>
+    <div class="row g-4" id="weatherCards">
+      <!-- Weather cards will be dynamically generated -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    <p>© 2025 Raj Joshi. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

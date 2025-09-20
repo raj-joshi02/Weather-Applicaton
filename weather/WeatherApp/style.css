@@ -1,0 +1,151 @@
+/* Background whitish-blue animated gradient */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #ffffff, #dbeafe, #ffffff, #e0f2fe);
+    background-size: 600% 600%;
+    animation: smoothSky 25s ease infinite;
+  }
+  
+  @keyframes smoothSky {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Navbar - frosted glass effect */
+  .glass-navbar {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+  
+  .glass-navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .glass-navbar .nav-link:hover {
+    color: #007bff !important;
+  }
+  
+  .glass-navbar .navbar-brand {
+    color: #007bff !important;
+    font-size: 1.4rem;
+  }
+  
+  /* Weather cards */
+  .weather-card {
+    margin:20px 0px;
+    border-radius: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, #3d7feb, #c86f6f);
+    color: #fff;
+    transition: transform 0.3s ease, background 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  .weather-card:hover {
+    transform: translateY(-6px);
+    background: linear-gradient(135deg, #72489d, #2a0b7c);
+  }
+  
+  .weather-card .card-header {
+    font-weight: 700;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+  }
+  
+  /* Search input + button */
+  #cityInput {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #007bff;
+  }
+  
+  #searchBtn {
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    border: none;
+    color: #fff;
+    transition: transform 0.5s ease, background-color 2s ease;
+  }
+  
+  #searchBtn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #00c6ff, #007bff);
+    
+  }
+  
+  /* Headings */
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
+  }
+  
+  /* Footer */
+  .footer {
+    background: rgb(255 255 255 / 25%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 1px 20px rgba(0,0,0,0.15);
+    color: #333;
+    margin-top: 50px;
+  }
+  .footer p{
+    font-size:18px;
+    font-family:math;
+    margin:8px;
+  }
+  /* About Cards */
+.about-card {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .about-card p,
+  .about-card ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-card ul li::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+  
